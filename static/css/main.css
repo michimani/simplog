@@ -28,6 +28,15 @@ a:hover {
   display: inline-block;
 }
 
+#main-menu-nav-items {
+  margin: 20px 0px 10px 0px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+#main-menu-nav-items .nav-item {
+  text-align: center;
+}
+
 /* post list */
 .post-list {
   marker: none;

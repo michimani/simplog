@@ -5,10 +5,10 @@
   <span class="site-sub-title">{{with site.Params.subtitle}} / {{.}}{{end}}</span>
 
   <div id="main-menu-nav">
-    <ul>
+    <div id="main-menu-nav-items">
       {{ range site.Menus.main }}
-        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        <div class="nav-item"><a href="{{ .URL }}">{{ .Name }}</a></div>
       {{ end }}
-    </ul>
+    </div>
   </div>
 </div>

@@ -71,4 +71,4 @@ theme = "SimpLog"
 
 [params]
   subtitle = "simple blog theme"
-  colorTheme = "green"
+  colorTheme = "default"
