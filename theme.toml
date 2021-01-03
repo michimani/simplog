@@ -1,0 +1,12 @@
+name = "SimpLog"
+license = "MIT"
+licenselink = "https://github.com/michimani/SimpLog/blob/master/LICENSE"
+description = "SimpLog is a simple theme for personal blog."
+homepage = "https://github.com/michimani/SimpLog"
+tags = ["blog", "simple", "minimal"]
+features = ["responsive", "show related posts", "archives by years", "archives by months"]
+min_version = "0.79.0"
+
+[author]
+  name = "michimani"
+  homepage = "https://this.michimani.net"

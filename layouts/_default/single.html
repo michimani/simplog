@@ -1,0 +1,44 @@
+{{define "main"}}
+
+<!--Title-->
+<h2>{{.Title}}</h2>
+<span class="sub">{{.Date.Format "2006-01-30"}}</span>
+
+<!--Date-->
+
+<!--TOC-->
+{{.TableOfContents}}
+
+<!--Content-->
+{{.Content}}
+
+{{ if ne .Title "About" }}
+<!-- Content footer -->
+<hr>
+
+<!--Tag-->
+<div class="content-footer-item">
+	Tags for this post:
+	{{range (.GetTerms "tags")}}
+	<a class="post-tag" href="{{.RelPermalink}}">{{.LinkTitle}}</a>
+	{{end}}
+</div>
+
+<!--Prev/Next-->
+<div class="content-footer-item .neighbor">
+	{{with .PrevInSection}}
+	<div class="prev-post">Prev <a href="{{.RelPermalink}}">{{.Title}}</a></div>
+	{{end}}
+	{{with .NextInSection}}
+	<div class="next-post">Next <a href="{{.RelPermalink}}">{{.Title}}</a></div>
+	{{end}}
+</div>
+
+<!--Related-->
+<!-- related category -->
+{{ partial "related-category-posts.html" . }}
+
+<!-- related tag -->
+{{ partial "related-tag-posts.html" . }}
+{{ end }}
+{{end}}

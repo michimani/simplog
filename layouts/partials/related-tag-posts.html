@@ -1,0 +1,22 @@
+{{ $site_obj_t := .Site }}
+{{ range .Params.tags }}
+    {{ $t := . }}
+    {{ $tposts := index $site_obj_t.Taxonomies.tags (replace (lower $t) " " "-") }}
+    {{ if gt (len $tposts) 1 }}
+    <div class="related-tag-category-list">
+        <h4>Other posts tagged by "{{ $t }}"</h3>
+        <ul class="post-list">
+          {{ range first 3 $tposts }}
+              {{ partial "li" . }}
+          {{ end }}
+        </ul>
+        <div class="more-area">
+          {{ if gt (len $tposts) 3 }}
+          <a class="more" href='/tags/{{ replace (lower $t) " " "-" }}/'>more ...</a>
+          {{ else }}
+          <a class="more" href="/tags/">other tags</a>
+          {{ end }}
+      </div>
+        </div>
+    {{ end }}
+{{ end }}

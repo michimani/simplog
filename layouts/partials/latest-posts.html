@@ -1,0 +1,8 @@
+{{$related := .Site.RegularPages.Related . | first 3}}
+{{with $related}}
+<ul class="post-list">
+	{{range . }}
+  {{ partial "li.html" . }}
+	{{end}}
+</ul>
+{{end}}

@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<title>{{ .Site.Title }}</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/main.css">
+{{ with .Site.Params.ColorTheme }}
+<link rel="stylesheet" href="/css/color-{{ . }}.css">
+{{ else }}
+<link rel="stylesheet" href="/css/color-default.css">
+{{ end }}
+
+{{ if not .Site.IsServer }}
+{{ template "_internal/google_analytics.html" . }}
+{{ end }}

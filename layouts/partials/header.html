@@ -1,0 +1,14 @@
+<div id="content-header" class="title">
+  <!--Site Title-->
+  <a class="site-title" href="{{ "" | relLangURL}}">{{site.Title}}</a>
+  <!--Sub-title-->
+  <span class="site-sub-title">{{with site.Params.subtitle}} / {{.}}{{end}}</span>
+
+  <div id="main-menu-nav">
+    <ul>
+      {{ range site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
