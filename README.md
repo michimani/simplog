@@ -1,6 +1,6 @@
 SimpLog
 ---
-Simplog is a simple blog theme for Hugo.
+SimpLog is a simple blog theme for Hugo.
 
 ![](./docs/images/theme_default.png)
 
@@ -33,6 +33,6 @@ Simplog is a simple blog theme for Hugo.
 ## Installation
 
 ```bash
-$ git submodule add https://github.com/michimani/simplog.git ./themes/simplog
+$ git submodule add https://github.com/michimani/SimpLog.git ./themes/SimpLog
 ```
 
