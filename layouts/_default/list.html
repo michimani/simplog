@@ -10,7 +10,9 @@
 {{$paginator := .Paginate $p}}
 
 <!--list-->
+{{ if eq .IsHome false }}
 <h2>{{.Title}}</h2>
+{{ end }}
 <ul class="post-list">
 	{{range $paginator.Pages}}
 	{{ partial "li.html" . }}
