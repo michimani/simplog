@@ -1,0 +1,22 @@
+body {
+  background-color: #ffebee;
+}
+
+.title {
+  color: #b71c1c;
+}
+
+.main {
+  color: #c62828;
+}
+
+.sub {
+  color: #e57373;
+}
+
+.post-tag, .post-category, p>code {
+  border-radius: 10%;
+  background-color: #e57373;
+  color: #ffebee;
+  padding: 1px 5px;
+}
