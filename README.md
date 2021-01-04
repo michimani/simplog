@@ -4,6 +4,8 @@ SimpLog is a simple blog theme for Hugo.
 
 ![](./docs/images/theme_default.png)
 
+Demo site is [here](https://michimani.github.io/SimpLog/).
+
 ## Features
 
 - Support tags, categories and archives page
