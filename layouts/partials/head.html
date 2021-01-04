@@ -8,12 +8,39 @@
 <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 {{ end }}
 <meta name="author" content="{{ .Site.Params.AuthorName }}">
-<link rel="stylesheet" href="{{ "/css/main.css" | relLangURL}}">
+
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "/images/apple-touch-icon.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "/images/favicon.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "/images/favicon-16x16.png" | relURL }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}">
+</meta>
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+{{ with .Params.ogimage }}
+<meta property="og:image" content="{{ .Params.ogimage | absURL }}">
+{{ else }}
+<meta property="og:image" content="{{ "/images/featured_image.jpg" | absURL }}">
+{{ end }}
+<meta name="twitter:card" content="summary_large_image" /></meta>
+<meta name="twitter:site" content="@{{ .Site.Params.Twitter }}"></meta>
+<meta name="twitter:creator" content="@{{ .Site.Params.Twitter }}"></meta>
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}"></meta>
+<meta name="twitter:url" content="{{ .Permalink }}"></meta>
+<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}"></meta>
+{{ with .Params.ogimage }}
+<meta property="og:image" content="{{ .Params.ogimage | absURL }}">
+{{ else }}
+<meta property="og:image" content="{{ "/images/featured_image.jpg" | absURL }}">
+{{ end }}
+
+<link rel="stylesheet" href="{{ "/css/main.css" | relURL }}">
 {{ with .Site.Params.ColorTheme }}
 {{ $colorThemeCssPath := . | printf "/css/color-%s.css" }}
-<link rel="stylesheet" href="{{ $colorThemeCssPath | relLangURL}}">
+<link rel="stylesheet" href="{{ $colorThemeCssPath | relURL }}">
 {{ else }}
-<link rel="stylesheet" href="{{ "/css/color-default.css" | relLangURL}}">
+<link rel="stylesheet" href="{{ "/css/color-default.css" | relURL }}">
 {{ end }}
 
 {{ if not .Site.IsServer }}
