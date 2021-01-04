@@ -19,9 +19,9 @@
 <meta property="og:site_name" content="{{ .Site.Title }}">
 <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 {{ with .Params.ogimage }}
-<meta property="og:image" content="{{ .Params.ogimage | absURL }}">
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.ogimage }}">
 {{ else }}
-<meta property="og:image" content="{{ "/images/featured_image.jpg" | absURL }}">
+<meta property="og:image" content="{{ .Site.BaseURL }}images/featured_image.jpg">
 {{ end }}
 <meta name="twitter:card" content="summary_large_image" /></meta>
 <meta name="twitter:site" content="@{{ .Site.Params.Twitter }}"></meta>
@@ -30,9 +30,9 @@
 <meta name="twitter:url" content="{{ .Permalink }}"></meta>
 <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}"></meta>
 {{ with .Params.ogimage }}
-<meta property="og:image" content="{{ .Params.ogimage | absURL }}">
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.ogimage }}">
 {{ else }}
-<meta property="og:image" content="{{ "/images/featured_image.jpg" | absURL }}">
+<meta property="og:image" content="{{ .Site.BaseURL }}images/featured_image.jpg">
 {{ end }}
 
 <link rel="stylesheet" href="{{ "/css/main.css" | relURL }}">
