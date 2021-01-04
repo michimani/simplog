@@ -100,7 +100,11 @@ ul.pagination li.page-item.disabled {
 
 /* terms */
 /* archives */
-#archives-items > .archives-item.mo {
+#term-item-list li {
+  font-size: 1.1em;
+  margin: 4px;
+}
+#term-item-list > .archives-item.mo {
   margin-left: 2rem;
 }
 

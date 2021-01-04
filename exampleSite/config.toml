@@ -1,5 +1,6 @@
 baseURL = "https://michimani.github.io/SimpLog" # Normally you don't need to specify a subdirectory
 title = "SimpLog"
+description = ""
 author = "michimani"
 copyright = "Copyright © 2021, Hugo Authors; all rights reserved."
 paginate = 3
@@ -72,3 +73,4 @@ theme = "SimpLog"
 [params]
   subtitle = "simple blog theme"
   colorTheme = "default"
+  description = "This is a simple blog theme for Hugo."

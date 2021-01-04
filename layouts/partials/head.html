@@ -1,7 +1,13 @@
 <meta charset="utf-8">
-<title>{{ .Site.Title }}</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{{ if .IsHome }}
+<title>{{ .Site.Title }}</title>
+<meta name="description" content="{{ .Site.Params.Description }}">
+{{ else }}
+<title>{{ .Title }} - {{ .Site.Title }}</title>
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+{{ end }}
+<meta name="author" content="{{ .Site.Params.AuthorName }}">
 <link rel="stylesheet" href="{{ "/css/main.css" | relLangURL}}">
 {{ with .Site.Params.ColorTheme }}
 {{ $colorThemeCssPath := . | printf "/css/color-%s.css" }}
