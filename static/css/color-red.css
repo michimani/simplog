@@ -20,3 +20,11 @@ body {
   color: #ffebee;
   padding: 1px 5px;
 }
+
+ul.pagination li.page-item {
+  background-color: #e57373;
+  color: #ffebee;
+}
+ul.pagination li.page-item.active {
+  background-color: #b71c1c;
+}
