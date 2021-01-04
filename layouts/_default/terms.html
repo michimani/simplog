@@ -1,30 +1,26 @@
 {{define "main"}}
 
 <h2>{{ .Title }}</h2>
+<ul id="term-item-list">
 {{ if eq .Title "Tags"}}
     {{ if lt 0 (len .Site.Taxonomies.tags) }}
-    <ul>
         {{ range sort .Site.Taxonomies.tags.ByCount "Name" }}
-        <li class="tag-item"><a href="{{ $.Site.BaseURL | relURL }}tags/{{ .Name | urlize }}/">{{ .Name }}<span> ({{ .Count }})</span> </a></li>
+        <li class="tag-item"><a href="{{ $.Site.BaseURL | relURL }}/tags/{{ .Name | urlize }}/">{{ .Name }}<span> ({{ .Count }})</span> </a></li>
         {{ end }}
-    </ul>
     {{ end }}
 {{ else if eq .Title "Categories"}}
     {{ if lt 0 (len .Site.Taxonomies.categories) }}
-    <ul>
         {{ range sort .Site.Taxonomies.categories.ByCount "Name" }}
-        <li class="category-item"><a href="{{ $.Site.BaseURL | relURL }}categories/{{ .Name | urlize }}/">{{ .Name }}<span> ({{ .Count }})</span></a></li>
+        <li class="category-item"><a href="{{ $.Site.BaseURL | relURL }}/categories/{{ .Name | urlize }}/">{{ .Name }}<span> ({{ .Count }})</span></a></li>
         {{ end }}
-    </ul>
     {{ end }}
 {{ else if eq .Title "Archives"}}
     {{ if lt 0 (len .Site.Taxonomies.archives) }}
-    <ul id="archives-items">
         {{ range $name, $items := .Site.Taxonomies.archives }}
-        <li class="archives-item {{ if gt (len $name) 5 }}mo{{ end }}"><a href="{{ $.Site.BaseURL }}archives/{{ $name | urlize | lower }}/">{{ $name }} ({{ .Count }})</a></li>
+        <li class="archives-item {{ if gt (len $name) 5 }}mo{{ end }}"><a href="{{ $.Site.BaseURL }}/archives/{{ $name | urlize | lower }}/">{{ $name }} ({{ .Count }})</a></li>
         {{ end }}
-    </ul>
     {{ end }}
 {{ end }}
+</ul>
 
 {{end}}
