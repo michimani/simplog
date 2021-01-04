@@ -2,7 +2,7 @@ SimpLog
 ---
 SimpLog is a simple blog theme for Hugo.
 
-![](./docs/images/theme_default.png)
+![main screenshot](./images/theme_default.png)
 
 Demo site is [here](https://michimani.github.io/SimpLog/).
 
@@ -18,19 +18,19 @@ Demo site is [here](https://michimani.github.io/SimpLog/).
 
 - Default
 
-    ![](./docs/images/theme_default.png)
+    ![screenshot default theme](./images/theme_default.png)
 
 - Dark
 
-    ![](./docs/images/theme_dark.png)
+    ![screenshot dark theme](./images/theme_dark.png)
 
 - Blue/Green/Red
 
-    ![](./docs/images/theme_blue.png)
+    ![screenshot red theme](./images/theme_red.png)
 
-    ![](./docs/images/theme_green.png)
+    ![screenshot green theme](./images/theme_green.png)
     
-    ![](./docs/images/theme_red.png)
+    ![screenshot blue theme](./images/theme_blue.png)
 
 ## Installation
 
