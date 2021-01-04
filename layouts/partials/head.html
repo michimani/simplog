@@ -2,11 +2,12 @@
 <title>{{ .Site.Title }}</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="{{ "/css/main.css" | relLangURL}}">
 {{ with .Site.Params.ColorTheme }}
-<link rel="stylesheet" href="/css/color-{{ . }}.css">
+{{ $colorThemeCssPath := . | printf "/css/color-%s.css" }}
+<link rel="stylesheet" href="{{ $colorThemeCssPath | relLangURL}}">
 {{ else }}
-<link rel="stylesheet" href="/css/color-default.css">
+<link rel="stylesheet" href="{{ "/css/color-default.css" | relLangURL}}">
 {{ end }}
 
 {{ if not .Site.IsServer }}

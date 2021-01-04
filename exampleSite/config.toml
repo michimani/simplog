@@ -1,4 +1,4 @@
-baseURL = "https://gohugo.io"
+baseURL = "https://michimani.github.io/SimpLog" # Normally you don't need to specify a subdirectory
 title = "SimpLog"
 author = "michimani"
 copyright = "Copyright © 2021, Hugo Authors; all rights reserved."
