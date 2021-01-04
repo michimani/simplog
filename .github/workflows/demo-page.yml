@@ -3,7 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - issue/7/host-demo-site-on-github-pages
+      - master
 
 jobs:
   deploy:
