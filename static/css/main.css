@@ -81,9 +81,15 @@ a:hover {
 ul.pagination {
   text-align: center;
 }
-ul.pagination li {
+ul.pagination li.page-item {
   display: inline;
-  padding: 10px;
+  padding: 6px;
+  margin: 4px;
+  border-radius: 10%;
+  font-size: 0.9em;
+}
+ul.pagination li.page-item.disabled {
+  opacity: 40%;
 }
 
 /* footer */
