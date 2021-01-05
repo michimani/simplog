@@ -24,6 +24,11 @@
 	{{end}}
 </div>
 
+<!-- disqus -->
+{{ if and (eq .Params.comments true) (eq .Site.Params.Enabled.Comment true) }}
+	{{ template "_internal/disqus.html" . }}
+{{ end }}
+
 <!--Prev/Next-->
 <div class="content-footer-item .neighbor">
 	{{with .PrevInSection}}
