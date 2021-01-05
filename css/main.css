@@ -40,16 +40,23 @@ a:hover {
 /* post list */
 .post-list {
   marker: none;
+  padding-inline-start: 0px;
 }
 .post-list li.post-item {
   display: block;
-  margin: 10px 0px;
+  margin: 10px 0px 20px 0px;
 }
 .post-list li.post-item .post-date  {
   font-size: 0.9em;
 }
 .post-list li.post-item .post-title {
   font-weight: 600;
+}
+.post-list li.post-item .post-summary {
+  font-size: 0.8em;
+}
+.post-list li.post-item .post-summary p {
+  margin: 0px;
 }
 
 /* content */
@@ -80,6 +87,8 @@ a:hover {
 /* pagination */
 ul.pagination {
   text-align: center;
+  margin: 30px 0px;
+  padding-inline-start: 0px;
 }
 ul.pagination li.page-item {
   display: inline;
