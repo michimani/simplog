@@ -9,6 +9,7 @@ DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 ignoreErrors = ["error-remote-getjson"]
 googleAnalytics = ""
+disqusShortname = "https-michimani-github-io-simplog"
 themesDir = "../../" # Delete this line if you want to use this theme on your site
 theme = "SimpLog"
 
@@ -43,25 +44,6 @@ theme = "SimpLog"
   tag = "tags"
   archive = "archives"
 
-[privacy]
-
-  [privacy.vimeo]
-    disabled = false
-    simple = true
-
-  [privacy.twitter]
-    disabled = false
-    enableDNT = true
-    simple = true
-
-  [privacy.instagram]
-    disabled = false
-    simple = true
-
-  [privacy.youtube]
-    disabled = false
-    privacyEnhanced = true
-
 [services]
 
   [services.instagram]
@@ -75,3 +57,6 @@ theme = "SimpLog"
   colorTheme = "default"
   description = "This is a simple blog theme for Hugo."
   twitter = "michimani210"
+
+  [params.enabled]
+    comment = true
