@@ -1,4 +1,4 @@
-baseURL = "https://michimani.github.io/SimpLog" # Normally you don't need to specify a subdirectory
+baseURL = "https://example.com"
 title = "SimpLog"
 description = ""
 author = "michimani"
@@ -9,7 +9,7 @@ DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 ignoreErrors = ["error-remote-getjson"]
 googleAnalytics = ""
-disqusShortname = "https-michimani-github-io-simplog"
+disqusShortname = ""
 themesDir = "../../" # Delete this line if you want to use this theme on your site
 theme = "SimpLog"
 
@@ -56,7 +56,7 @@ theme = "SimpLog"
   subtitle = "simple blog theme"
   colorTheme = "default"
   description = "This is a simple blog theme for Hugo."
-  twitter = "michimani210"
+  twitter = "GoHugoIO"
 
   [params.enabled]
     comment = true

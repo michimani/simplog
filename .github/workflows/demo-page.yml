@@ -16,6 +16,15 @@ jobs:
         with:
           hugo-version: '0.79.0'
 
+      - name: Pre Build
+        run: |
+          mv config.toml config.toml.org
+          sed -e 's/baseURL = "https:\/\/example.com"/baseURL = "https:\/\/michimani.github.io\/SimpLog"/g' \
+            -e 's/disqusShortname = ""/disqusShortname = "https-michimani-github-io-simplog"/g' \
+            -e 's/twitter = "GoHugoIO"/twitter = "michimani210"/g' \
+            config.toml.org > config.toml
+        working-directory: ./exampleSite
+
       - name: Build
         run: hugo --minify
         working-directory: ./exampleSite
