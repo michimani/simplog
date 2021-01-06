@@ -1,8 +1,10 @@
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmichimani%2FSimpLog.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmichimani%2FSimpLog?ref=badge_shield)
-
 SimpLog
 ---
-SimpLog is a simple blog theme for Hugo.
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmichimani%2FSimpLog.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmichimani%2FSimpLog?ref=badge_shield)
+
+
+SimpLog is a simple blog theme for [Hugo](https://gohugo.io/).
 
 ![screenshot-default](https://user-images.githubusercontent.com/9986092/103643356-de1c8880-4f97-11eb-93d3-05889b839f9f.png)
 
