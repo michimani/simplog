@@ -3,6 +3,7 @@ SimpLog
 SimpLog is a simple blog theme for Hugo.
 
 ![screenshot-default](https://user-images.githubusercontent.com/9986092/103643356-de1c8880-4f97-11eb-93d3-05889b839f9f.png)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmichimani%2FSimpLog.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmichimani%2FSimpLog?ref=badge_shield)
 
 Demo site is [here](https://michimani.github.io/SimpLog/).
 
@@ -32,3 +33,7 @@ Demo site is [here](https://michimani.github.io/SimpLog/).
 $ git submodule add https://github.com/michimani/SimpLog.git ./themes/SimpLog
 ```
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmichimani%2FSimpLog.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmichimani%2FSimpLog?ref=badge_large)
