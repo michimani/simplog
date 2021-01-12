@@ -16,6 +16,8 @@ Demo site is [here](https://michimani.github.io/SimpLog/).
 - Disqus
 - Some theme colors
 - Responsive
+- Custom CSS
+- Adobe Fonts
 - Support tags, categories and archives page
 - Show related tags and categories posts
 
@@ -72,6 +74,24 @@ And if you enable comment form, set `true` at `config.toml` and each post file.
     ```
 
 The comment form will be enabled when both of them are `true`.
+
+### Custom CSS
+
+If you want to use your own CSS, set value that is path to your CSS file at `config.toml`
+
+```toml
+[params]
+  adobeFontsKitId = ""
+```
+
+### Adobe Fonts
+
+If you use Adobe Fonts in your site, set value that is Adobe Fonts Kit ID at `config.toml`. In this case you will need to set custom css as well.
+
+```toml
+[params]
+  adobeFontsKitId = "<your adobe fonts kit ID>"
+```
 
 ### Some theme colors
 
