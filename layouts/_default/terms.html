@@ -5,13 +5,13 @@
 {{ if eq .Title "Tags"}}
     {{ if lt 0 (len .Site.Taxonomies.tags) }}
         {{ range sort .Site.Taxonomies.tags.ByCount "Name" }}
-        <li class="tag-item"><a href="{{ $.Site.BaseURL | relURL }}/tags/{{ .Name | urlize }}/">{{ .Name }}<span> ({{ .Count }})</span> </a></li>
+        <li class="tag-item"><a href="{{ $.Site.BaseURL }}/tags/{{ .Name | urlize }}/">{{ .Name }}<span> ({{ .Count }})</span> </a></li>
         {{ end }}
     {{ end }}
 {{ else if eq .Title "Categories"}}
     {{ if lt 0 (len .Site.Taxonomies.categories) }}
         {{ range sort .Site.Taxonomies.categories.ByCount "Name" }}
-        <li class="category-item"><a href="{{ $.Site.BaseURL | relURL }}/categories/{{ .Name | urlize }}/">{{ .Name }}<span> ({{ .Count }})</span></a></li>
+        <li class="category-item"><a href="{{ $.Site.BaseURL }}/categories/{{ .Name | urlize }}/">{{ .Name }}<span> ({{ .Count }})</span></a></li>
         {{ end }}
     {{ end }}
 {{ else if eq .Title "Archives"}}

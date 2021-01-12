@@ -2,7 +2,7 @@
 
 <!--Title-->
 <h2>{{.Title}}</h2>
-<span class="sub">{{.Date.Format "2006-01-30"}}</span>
+<span class="sub">{{.Date.Format "2006-01-02"}}</span>
 
 <!--Date-->
 
@@ -32,12 +32,12 @@
 {{ end }}
 
 <!--Prev/Next-->
-<div class="content-footer-item .neighbor">
+<div class="content-footer-item neighbor">
 	{{with .PrevInSection}}
-	<div class="prev-post">Prev <a href="{{.RelPermalink}}">{{.Title}}</a></div>
+	<div class="prev-post">Prev: <a href="{{.RelPermalink}}">{{.Title}}</a></div>
 	{{end}}
 	{{with .NextInSection}}
-	<div class="next-post">Next <a href="{{.RelPermalink}}">{{.Title}}</a></div>
+	<div class="next-post">Next: <a href="{{.RelPermalink}}">{{.Title}}</a></div>
 	{{end}}
 </div>
 

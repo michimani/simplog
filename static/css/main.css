@@ -62,9 +62,15 @@ a:hover {
 /* content */
 
 /* code, tag, category */
+pre {
+  padding: 10px;
+}
 .post-tag, .post-category, p>code {
-  border-radius: 10%;
-  padding: 1px 5px;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+div.highlight > pre {
+  overflow-x: scroll;
 }
 
 /* content footer */
@@ -74,6 +80,7 @@ a:hover {
 .neighbor {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 20px 5px;
 }
 
 /* see also */
@@ -105,6 +112,7 @@ ul.pagination li.page-item.disabled {
 #content-footer {
   text-align: center;
   font-size: 0.8em;
+  margin: 20px 0px 10px 0px;
 }
 
 /* terms */
@@ -140,6 +148,12 @@ ul.pagination li.page-item.disabled {
   img {
       max-width: 100%;
   }
+  .neighbor {
+    grid-template-columns: 1fr;
+  }
+  .neighbor > div {
+    margin: 5px 0px;
+  }
 }
 
 /* Low-DPI mobile styles */
@@ -149,5 +163,11 @@ ul.pagination li.page-item.disabled {
   }
   img {
       max-width: 100%;
+  }
+  .neighbor {
+    grid-template-columns: 1fr;
+  }
+  .neighbor > div {
+    margin: 5px 0px;
   }
 }

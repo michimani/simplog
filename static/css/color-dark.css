@@ -14,11 +14,13 @@ body {
   color: #757575;
 }
 
-.post-tag, .post-category, p>code {
-  border-radius: 10%;
-  background-color: #757575;
+.post-tag, .post-category {
+  background-color: #fafafa;
   color: #212121;
-  padding: 1px 5px;
+}
+p>code {
+  background-color: #424242;
+  color: #fafafa;
 }
 
 ul.pagination li.page-item {
