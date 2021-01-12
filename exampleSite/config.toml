@@ -62,5 +62,5 @@ theme = "SimpLog"
 
   [params.enabled]
     comment = true
-    summary = false
-    toc = false
+    summary = true
+    toc = true
