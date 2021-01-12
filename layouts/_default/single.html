@@ -7,7 +7,9 @@
 <!--Date-->
 
 <!--TOC-->
+{{ if eq .Site.Params.Enabled.Toc true }}
 {{.TableOfContents}}
+{{ end }}
 
 <!--Content-->
 {{.Content}}

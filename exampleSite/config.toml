@@ -57,6 +57,10 @@ theme = "SimpLog"
   colorTheme = "default"
   description = "This is a simple blog theme for Hugo."
   twitter = "GoHugoIO"
+  customCSS = "/css/custom.css"
+  adobeFontsKitId = ""
 
   [params.enabled]
     comment = true
+    summary = false
+    toc = false
