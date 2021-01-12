@@ -1,0 +1,32 @@
+body {
+  background-color: #e8f5e9;
+}
+
+.title {
+  color: #1b5e20;
+}
+
+.main {
+  color: #2e7d32;
+}
+
+.sub {
+  color: #81c784;
+}
+
+.post-tag, .post-category {
+  background-color: #1b5e20;
+  color: #e8f5e9;
+}
+p>code {
+  background-color: #c8e6c9;
+  color: #1b5e20;
+}
+
+ul.pagination li.page-item {
+  background-color: #81c784;
+  color: #e8f5e9;
+}
+ul.pagination li.page-item.active {
+  background-color: #1b5e20;
+}
