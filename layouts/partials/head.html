@@ -1,48 +1,49 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{{ $site := .Site }}
 {{ if .IsHome }}
-<title>{{ .Site.Title }}</title>
-<meta name="description" content="{{ .Site.Params.Description }}">
+<title>{{ $site.Title }}</title>
+<meta name="description" content="{{ $site.Params.Description }}">
 {{ else }}
-<title>{{ .Title }} - {{ .Site.Title }}</title>
-<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<title>{{ .Title }} - {{ $site.Title }}</title>
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ $site.Params.description }}{{ end }}">
 {{ end }}
-<meta name="author" content="{{ .Site.Params.AuthorName }}">
+<meta name="author" content="{{ $site.Params.AuthorName }}">
 
 <link rel="apple-touch-icon" sizes="180x180" href="{{ "/images/apple-touch-icon.png" | relURL }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ "/images/favicon.png" | relURL }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ "/images/favicon-16x16.png" | relURL }}">
-<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ $site.Title }}{{ else }}{{ .Title }} - {{ $site.Title }}{{ end }}">
 </meta>
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="article">
-<meta property="og:site_name" content="{{ .Site.Title }}">
-<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:site_name" content="{{ $site.Title }}">
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ $site.Params.description }}{{ end }}">
 {{ with .Params.ogimage }}
-<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.ogimage }}">
+<meta property="og:image" content="{{ $site.BaseURL }}{{ . }}">
 {{ else }}
-<meta property="og:image" content="{{ .Site.BaseURL }}/images/featured_image.jpg">
+<meta property="og:image" content="{{ $site.BaseURL }}/images/featured_image.jpg">
 {{ end }}
 <meta name="twitter:card" content="summary_large_image" /></meta>
-<meta name="twitter:site" content="@{{ .Site.Params.Twitter }}"></meta>
-<meta name="twitter:creator" content="@{{ .Site.Params.Twitter }}"></meta>
-<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}"></meta>
+<meta name="twitter:site" content="@{{ $site.Params.Twitter }}"></meta>
+<meta name="twitter:creator" content="@{{ $site.Params.Twitter }}"></meta>
+<meta name="twitter:title" content="{{ if .IsHome }}{{ $site.Title }}{{ else }}{{ .Title }} - {{ $site.Title }}{{ end }}"></meta>
 <meta name="twitter:url" content="{{ .Permalink }}"></meta>
-<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}"></meta>
+<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ $site.Params.description }}{{ end }}"></meta>
 {{ with .Params.ogimage }}
-<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.ogimage }}">
+<meta property="og:image" content="{{ $site.BaseURL }}{{ . }}">
 {{ else }}
-<meta property="og:image" content="{{ .Site.BaseURL }}/images/featured_image.jpg">
+<meta property="og:image" content="{{ $site.BaseURL }}/images/featured_image.jpg">
 {{ end }}
 
 <link rel="stylesheet" href="{{ "/css/main.css" | relURL }}">
-{{ with .Site.Params.ColorTheme }}
+{{ with $site.Params.ColorTheme }}
 {{ $colorThemeCssPath := . | printf "/css/color-%s.css" }}
 <link rel="stylesheet" href="{{ $colorThemeCssPath | relURL }}">
 {{ else }}
 <link rel="stylesheet" href="{{ "/css/color-default.css" | relURL }}">
 {{ end }}
 
-{{ if not .Site.IsServer }}
+{{ if not $site.IsServer }}
 {{ template "_internal/google_analytics.html" . }}
 {{ end }}
