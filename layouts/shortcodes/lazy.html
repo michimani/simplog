@@ -1,0 +1,18 @@
+{{ $abs := .Get "abs" }}
+<div class="lazy-image-area">
+  <div class="lazy-image-wrapper">
+    <img
+      class="lazy"
+      alt='{{ .Get "alt" }}'
+      src='{{ "/images/lazy/lazy-image.jpg" | relURL }}'
+      {{ if eq $abs "y" }}
+      data-src='{{ .Get "src" }}'
+      data-srcset='{{ .Get "src" }} 2x, {{ .Get "src" }} 1x'
+      {{ else }}
+      {{ $path := printf "/images/%s" (.Get "src") }}
+      data-src='{{ $path | relURL}}'
+      data-srcset='{{ $path | relURL}} 2x, {{ $path | relURL}} 1x'
+      {{ end }}
+    >
+  </div>
+</div>

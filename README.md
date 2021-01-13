@@ -18,6 +18,7 @@ Demo site is [here](https://michimani.github.io/SimpLog/).
 - Responsive
 - Custom CSS
 - Adobe Fonts
+- Lazy load image
 - Support tags, categories and archives page
 - Show related tags and categories posts
 
@@ -112,6 +113,21 @@ You can change theme color easily. Set the value one of `default`, `dark`, `red`
     ![screenshot-green](https://user-images.githubusercontent.com/9986092/103643352-dd83f200-4f97-11eb-8a10-7ad39bb8a6ca.png)
     ![screenshot-blue](https://user-images.githubusercontent.com/9986092/103643347-d9f06b00-4f97-11eb-8bd6-0f57462b2e3d.png)
 
+### Lazy load image
+
+You can easily set up an image tag for lazy loading by using the shortcode below.
+
+```markdown
+{{< lazy src="image-file-name.jpg" alt="attribute for this image" >}}
+```
+
+In the above case, the image files under the `images` directory will be displayed. (e.g. `/images/image-file-name.jpg`)
+
+If you want to specify another path or a path with a different domain, write the full path to the image file and add `abs =" y "`.
+
+```markdown
+{{< lazy src="https://michimani.github.io/SimpLog/images/featured_image.jpg" alt="attribute for this image" abs="y" >}}
+```
 
 ## License
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmichimani%2FSimpLog.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmichimani%2FSimpLog?ref=badge_large)
