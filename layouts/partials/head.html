@@ -40,12 +40,7 @@
 {{ end }}
 
 <link rel="stylesheet" href="{{ "/css/main.css" | relURL }}">
-{{ with $site.Params.ColorTheme }}
-{{ $colorThemeCssPath := . | printf "/css/color-%s.css" }}
-<link rel="stylesheet" href="{{ $colorThemeCssPath | relURL }}">
-{{ else }}
-<link rel="stylesheet" href="{{ "/css/color-default.css" | relURL }}">
-{{ end }}
+<link rel="stylesheet" href="{{ "/css/color.css" | relURL }}">
 
 {{ with $site.Params.CustomCSS }}
 <link rel="stylesheet" href="{{ . | relURL }}">
