@@ -2,7 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
 {{- partial "head.html" . -}}
 
-<body>
+<body {{ with .Site.Params.ColorTheme }}class="theme-{{.}}"{{end}}>
 	{{- partial "header.html" . -}}
 	<div id="content" class="main">
 		{{- block "main" . }}{{- end }}

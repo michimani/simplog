@@ -129,5 +129,28 @@ If you want to specify another path or a path with a different domain, write the
 {{< lazy src="https://michimani.github.io/SimpLog/images/featured_image.jpg" alt="attribute for this image" abs="y" >}}
 ```
 
+## Developmet
+
+Install the node module for development such as CSS generation.
+
+```bash
+$ npm install
+```
+
+### Generate CSS from SCSS
+
+To generate CSS from SCSS, run the following command.
+
+```bash
+$ npm run css:scss
+```
+
+If you want to monitor SCSS changes, run the following command.
+
+```bash
+$ npm run watch:scss
+```
+
+
 ## License
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmichimani%2FSimpLog.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmichimani%2FSimpLog?ref=badge_large)
