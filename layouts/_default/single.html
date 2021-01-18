@@ -19,12 +19,15 @@
 <hr>
 
 <!--Tag-->
+{{ $tags := .GetTerms "tags" }}
+{{ if gt (len $tags) 0 }}
 <div class="content-footer-item">
 	Tags for this post:
 	{{range (.GetTerms "tags")}}
 	<a class="post-tag" href="{{.RelPermalink}}">{{.LinkTitle}}</a>
 	{{end}}
 </div>
+{{ end }}
 
 <!-- disqus -->
 {{ if and (eq .Params.comments true) (eq .Site.Params.Enabled.Comment true) }}
