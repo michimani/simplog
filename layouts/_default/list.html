@@ -15,7 +15,7 @@
 {{ end }}
 <ul class="post-list">
 	{{range $paginator.Pages}}
-	{{ partial "li.html" . }}
+	{{ partial "li.html" (dict "context" . "isIndex" true) }}
 	{{end}}
 </ul>
 

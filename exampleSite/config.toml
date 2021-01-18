@@ -1,5 +1,5 @@
 baseURL = "https://example.com"
-title = "SimpLog"
+title = "simplog"
 description = ""
 author = "michimani"
 copyright = "Copyright © 2021, Hugo Authors; all rights reserved."
@@ -11,7 +11,7 @@ ignoreErrors = ["error-remote-getjson"]
 googleAnalytics = ""
 disqusShortname = ""
 themesDir = "../../" # Delete this line if you want to use this theme on your site
-theme = "SimpLog"
+theme = "simplog"
 
 [menu]
 

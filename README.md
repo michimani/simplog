@@ -1,14 +1,14 @@
-SimpLog
+simplog
 ---
 
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmichimani%2FSimpLog.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmichimani%2FSimpLog?ref=badge_shield)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmichimani%2Fsimplog.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmichimani%2Fsimplog?ref=badge_shield)
 
 
-SimpLog is a simple blog theme for [Hugo](https://gohugo.io/).
+simplog is a simple blog theme for [Hugo](https://gohugo.io/).
 
 ![screenshot-default](https://user-images.githubusercontent.com/9986092/103643356-de1c8880-4f97-11eb-93d3-05889b839f9f.png)
 
-Demo site is [here](https://michimani.github.io/SimpLog/).
+Demo site is [here](https://michimani.github.io/simplog/).
 
 ## Features
 
@@ -25,7 +25,7 @@ Demo site is [here](https://michimani.github.io/SimpLog/).
 ## Installation
 
 ```bash
-$ git submodule add https://github.com/michimani/SimpLog.git ./themes/SimpLog
+$ git submodule add https://github.com/michimani/simplog.git ./themes/simplog
 ```
 
 ## Updating
@@ -126,7 +126,7 @@ In the above case, the image files under the `images` directory will be displaye
 If you want to specify another path or a path with a different domain, write the full path to the image file and add `abs =" y "`.
 
 ```markdown
-{{< lazy src="https://michimani.github.io/SimpLog/images/featured_image.jpg" alt="attribute for this image" abs="y" >}}
+{{< lazy src="https://michimani.github.io/simplog/images/featured_image.jpg" alt="attribute for this image" abs="y" >}}
 ```
 
 ## Developmet
@@ -153,4 +153,4 @@ $ npm run watch:scss
 
 
 ## License
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmichimani%2FSimpLog.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmichimani%2FSimpLog?ref=badge_large)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmichimani%2Fsimplog.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmichimani%2Fsimplog?ref=badge_large)
