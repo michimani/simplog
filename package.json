@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michimani/SimpLog.git"
+    "url": "git+https://github.com/michimani/simplog.git"
   },
   "author": "michimani",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/michimani/SimpLog/issues"
+    "url": "https://github.com/michimani/simplog/issues"
   },
-  "homepage": "https://github.com/michimani/SimpLog#readme",
+  "homepage": "https://github.com/michimani/simplog#readme",
   "devDependencies": {
     "node-sass": "^5.0.0",
     "watch": "^1.0.2"
