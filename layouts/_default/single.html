@@ -6,7 +6,9 @@
 
 <!--Title-->
 <h2>{{.Title}}</h2>
+{{ if or (not .Params.hideDate) (eq .Params.hideDate false) }}
 <span class="sub">{{.Date.Format "2006-01-02"}}</span>
+{{ end }}
 
 <!--Date-->
 
@@ -42,6 +44,7 @@
 	{{ template "_internal/disqus.html" . }}
 {{ end }}
 
+{{ if or (not .Params.hideNeighbor) (eq .Params.hideNeighbor false) }}
 <!--Prev/Next-->
 <div class="content-footer-item neighbor">
 	{{with .PrevInSection}}
@@ -51,6 +54,7 @@
 	<div class="next-post">Next: <a href="{{.RelPermalink}}">{{.Title}}</a></div>
 	{{end}}
 </div>
+{{ end }}
 
 <!--Related-->
 <!-- related category -->
