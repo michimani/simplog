@@ -1,5 +1,9 @@
 {{define "main"}}
 
+{{ if templates.Exists "partials/top-of-content.html" }}
+  {{ partial "top-of-content.html" . }}
+{{ end }}
+
 <!--Title-->
 <h2>{{.Title}}</h2>
 <span class="sub">{{.Date.Format "2006-01-02"}}</span>
@@ -13,6 +17,10 @@
 
 <!--Content-->
 {{.Content}}
+
+{{ if templates.Exists "partials/bottom-of-content.html" }}
+  {{ partial "bottom-of-content.html" . }}
+{{ end }}
 
 {{ if ne .Title "About" }}
 <!-- Content footer -->

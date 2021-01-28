@@ -53,7 +53,7 @@ $colors:(
       background-color: map-get($type, bold);
       color: map-get($type, bg);
     }
-    p>code {
+    :not(.highlight)>*>code {
       background-color: map-get($type, subsub);
       color: map-get($type, bold);
     }
