@@ -65,7 +65,7 @@ a {
 pre {
   padding: 10px;
 }
-.post-tag, .post-category, p>code {
+.post-tag, .post-category, :not(.highlight)>*>code {
   border-radius: 4px;
   padding: 2px 5px;
 }
