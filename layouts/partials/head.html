@@ -1,3 +1,5 @@
+{{ $lastBuld := .Date }}
+{{ $cahceHashBase := (sha1 $lastBuld) }}
 {{ $site := .Site }}
 {{ if not $site.IsServer }}
 {{ template "_internal/google_analytics.html" . }}
@@ -13,9 +15,9 @@
 {{ end }}
 <meta name="author" content="{{ $site.Params.AuthorName }}">
 
-<link rel="apple-touch-icon" sizes="180x180" href="{{ "/images/apple-touch-icon.png" | relURL }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ "/images/favicon.png" | relURL }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ "/images/favicon-16x16.png" | relURL }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "/images/apple-touch-icon.png" | relURL }}?c={{$cahceHashBase}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "/images/favicon.png" | relURL }}?c={{$cahceHashBase}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "/images/favicon-16x16.png" | relURL }}?c={{$cahceHashBase}}">
 <meta property="og:title" content="{{ if .IsHome }}{{ $site.Title }}{{ else }}{{ .Title }} - {{ $site.Title }}{{ end }}">
 </meta>
 <meta property="og:url" content="{{ .Permalink }}">
@@ -39,11 +41,11 @@
 <meta property="og:image" content="{{ $site.BaseURL }}/images/featured_image.jpg">
 {{ end }}
 
-<link rel="stylesheet" href="{{ "/css/main.css" | relURL }}">
-<link rel="stylesheet" href="{{ "/css/color.css" | relURL }}">
+<link rel="stylesheet" href="{{ "/css/main.css" | relURL }}?c={{$cahceHashBase}}">
+<link rel="stylesheet" href="{{ "/css/color.css" | relURL }}?c={{$cahceHashBase}}">
 
 {{ with $site.Params.CustomCSS }}
-<link rel="stylesheet" href="{{ . | relURL }}">
+<link rel="stylesheet" href="{{ . | relURL }}?c={{$cahceHashBase}}">
 {{ end }}
 
 {{ with $site.Params.AdobeFontsKitId }}
