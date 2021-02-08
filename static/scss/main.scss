@@ -8,6 +8,7 @@ body {
 a {
   text-decoration: none;
   opacity: 80%;
+  line-height: 1.5em;
   &:hover {
     opacity: 70%;
   }
@@ -64,6 +65,12 @@ blockquote {
 }
 
 /* content */
+/* head */
+#content {
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2em;
+  }
+}
 
 /* code, tag, category */
 pre {

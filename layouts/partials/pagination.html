@@ -3,15 +3,15 @@
 <ul class="pagination">
   {{ with $pag.First }}
   {{ if $pag.HasPrev }}
-  <li class="page-item"><a href="{{ .URL }}" class="page-link" aria-label="First"><span aria-hidden="true">First</span></a></li>
+  <li class="page-item"><a href="{{ .URL }}" class="page-link" aria-label="First"><span aria-hidden="true">|<</span></a></li>
   {{ else }}
-  <li class="page-item disabled"><span aria-hidden="true">First</span></li>
+  <li class="page-item disabled"><span aria-hidden="true">|<</span></li>
   {{ end }}
   {{ end }}
   {{ if $pag.HasPrev }}
-  <li class="page-item"><a href="{{ $pag.Prev.URL }}" class="page-link" aria-label="Previous"><span aria-hidden="true">Prev</span></a></li>
+  <li class="page-item"><a href="{{ $pag.Prev.URL }}" class="page-link" aria-label="Previous"><span aria-hidden="true"><</span></a></li>
   {{ else }}
-  <li class="page-item disabled"><span aria-hidden="true">Prev</span></li>
+  <li class="page-item disabled"><span aria-hidden="true"><</span></li>
   {{ end }}
   {{ $ellipsed := false }}
   {{ $shouldEllipse := false }}
@@ -34,16 +34,16 @@
   {{ end }}
   {{ if $pag.HasNext }}
   <li class="page-item">
-    <a href="{{ $pag.Next.URL }}" class="page-link" aria-label="Next"><span aria-hidden="true">Next</span></a>
+    <a href="{{ $pag.Next.URL }}" class="page-link" aria-label="Next"><span aria-hidden="true">></span></a>
   </li>
   {{ else }}
-  <li class="page-item disabled"><span aria-hidden="true">Next</span></li>
+  <li class="page-item disabled"><span aria-hidden="true">></span></li>
   {{ end }}
   {{ with $pag.Last }}
   {{ if $pag.HasNext }}
-  <li class="page-item"><a href="{{ .URL }}" class="page-link" aria-label="Last"><span aria-hidden="true">Last</span></a></li>
+  <li class="page-item"><a href="{{ .URL }}" class="page-link" aria-label="Last"><span aria-hidden="true">>|</span></a></li>
   {{ else }}
-  <li class="page-item disabled"><span aria-hidden="true">Last</span></li>
+  <li class="page-item disabled"><span aria-hidden="true">>|</span></li>
   {{ end }}
   {{ end }}
 </ul>
