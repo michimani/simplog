@@ -6,7 +6,6 @@ homepage = "https://github.com/michimani/simplog"
 demosite = "https://michimani.github.io/simplog/"
 tags = ["blog", "simple", "minimal"]
 features = ["responsive", "show related posts by tags and categories", "archives by years", "archives by months"]
-min_version = "0.59.1"
 
 [author]
   name = "michimani"
