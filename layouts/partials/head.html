@@ -1,4 +1,4 @@
-{{ $lastBuld := .Date }}
+{{ $lastBuld := now.Unix }}
 {{ $cahceHashBase := (sha1 $lastBuld) }}
 {{ $site := .Site }}
 {{ if not $site.IsServer }}
