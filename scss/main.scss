@@ -42,6 +42,14 @@ blockquote {
   }
 }
 
+#header-image-area {
+  margin: 5px 0px -10px 0px;
+  img.header-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /* post list */
 .post-list {
   marker: none;
