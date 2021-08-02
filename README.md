@@ -25,13 +25,13 @@ Demo site is [here](https://michimani.github.io/simplog/).
 ## Installation
 
 ```bash
-$ git submodule add https://github.com/michimani/simplog.git ./themes/simplog
+git submodule add https://github.com/michimani/simplog.git ./themes/simplog
 ```
 
 ## Updating
 
 ```bash
-$ git submodule update --remote --merge
+git submodule update --remote --merge
 ```
 
 ## Detail of features
@@ -131,10 +131,20 @@ If you want to specify another path or a path with a different domain, write the
 
 ## Developmet
 
+Install `nodenv` and install `node 15.x`
+
+```bash
+brew install nodenv
+```
+
+```bash
+nodenv install 15.14.0
+```
+
 Install the node module for development such as CSS generation.
 
 ```bash
-$ npm install
+npm install
 ```
 
 ### Generate CSS from SCSS
@@ -142,13 +152,13 @@ $ npm install
 To generate CSS from SCSS, run the following command.
 
 ```bash
-$ npm run css:scss
+npm run css:scss
 ```
 
 If you want to monitor SCSS changes, run the following command.
 
 ```bash
-$ npm run watch:scss
+npm run watch:scss
 ```
 
 

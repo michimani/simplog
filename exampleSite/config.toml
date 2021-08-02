@@ -59,6 +59,7 @@ theme = "simplog"
   twitter = "GoHugoIO"
   customCSS = ""
   adobeFontsKitId = ""
+  headerImagePath = "images/header-image.jpg"
 
   [params.enabled]
     comment = true

@@ -1,8 +1,17 @@
+{{ $lastBuld := now.Unix }}
+{{ $cahceHashBase := (sha1 $lastBuld) }}
+{{ $site := .Site }}
 <div id="content-header" class="title">
   <!--Site Title-->
   <a class="site-title" href="{{ "" | relURL }}">{{site.Title}}</a>
   <!--Sub-title-->
   <span class="site-sub-title">{{with site.Params.subtitle}} / {{.}}{{end}}</span>
+
+  {{ with $site.Params.headerImagePath }}
+  <div id="header-image-area">
+    <img class="header-image" src="{{ . | relURL }}?c={{$cahceHashBase}}">
+  </div>
+  {{ end }}
 
   <div id="main-menu-nav">
     <div id="main-menu-nav-items">
