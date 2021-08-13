@@ -82,7 +82,7 @@ If you want to use your own CSS, set value that is path to your CSS file at `con
 
 ```toml
 [params]
-  adobeFontsKitId = ""
+  customCSS = ""
 ```
 
 ### Adobe Fonts
