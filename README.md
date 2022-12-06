@@ -129,6 +129,27 @@ If you want to specify another path or a path with a different domain, write the
 {{< lazy src="https://michimani.github.io/simplog/images/featured_image.jpg" alt="attribute for this image" abs="y" >}}
 ```
 
+### Mermaid
+
+You can use the mermaid language in Markdown code blocks.
+
+
+```markdown
+```mermaid
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail...
+    John-->Alice: Great!
+    John->Bob: How about you?
+    Bob-->John: Jolly good!
+``
+```
+
 ## Developmet
 
 Install `nodenv` and install `node 15.x`
