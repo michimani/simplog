@@ -152,14 +152,14 @@ sequenceDiagram
 
 ## Developmet
 
-Install `nodenv` and install `node 15.x`
+Install `nodenv` and install `node 18.x`
 
 ```bash
 brew install nodenv
 ```
 
 ```bash
-nodenv install 15.14.0
+nodenv install 18.14.2
 ```
 
 Install the node module for development such as CSS generation.
