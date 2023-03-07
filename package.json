@@ -24,6 +24,6 @@
   "devDependencies": {
     "node-sass": "^8.0.0",
     "npm-check-updates": "^16.7.10",
-    "watch": "^1.0.2"
+    "watch": "^0.13.0"
   }
 }
