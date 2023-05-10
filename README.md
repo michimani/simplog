@@ -49,7 +49,7 @@ googleAnalytics = "<your tracking ID>"
 You can set the comment form via Disqus. If you set the comment form, set disqus short name at `config.toml`.
 
 ```toml
-googleAnalytics = "<your disqus short name>"
+disqusShortname = "<your disqus short name>"
 ```
 
 And if you enable comment form, set `true` at `config.toml` and each post file.
