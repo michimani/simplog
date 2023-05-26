@@ -15,10 +15,10 @@
 {{ end }}
 <meta name="author" content="{{ $site.Params.AuthorName }}">
 
-<link rel="apple-touch-icon" sizes="180x180" href="{{ "/images/apple-touch-icon.png" | relURL }}?c={{$cacheHashBase}}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ "/images/favicon.png" | relURL }}?c={{$cacheHashBase}}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ "/images/favicon-16x16.png" | relURL }}?c={{$cacheHashBase}}">
-<link rel="alternate" href="{{ "/index.xml" | relURL }}?c={{$cacheHashBase}}" type="application/rss+xml" title="RSS" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{ relURL "images/apple-touch-icon.png" }}?c={{$cacheHashBase}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ relURL "images/favicon.png" }}?c={{$cacheHashBase}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ relURL "images/favicon-16x16.png" }}?c={{$cacheHashBase}}">
+<link rel="alternate" href="{{ relURL "index.xml" }}?c={{$cacheHashBase}}" type="application/rss+xml" title="RSS" />
 <meta property="og:title" content="{{ if .IsHome }}{{ $site.Title }}{{ else }}{{ .Title }} - {{ $site.Title }}{{ end }}">
 </meta>
 <meta property="og:url" content="{{ .Permalink }}">
@@ -42,11 +42,11 @@
 <meta property="og:image" content="{{ $site.BaseURL }}/images/featured_image.jpg">
 {{ end }}
 
-<link rel="stylesheet" href="{{ "/css/main.css" | relURL }}?c={{$cacheHashBase}}">
-<link rel="stylesheet" href="{{ "/css/color.css" | relURL }}?c={{$cacheHashBase}}">
+<link rel="stylesheet" href="{{ relURL "css/main.css" }}?c={{$cacheHashBase}}">
+<link rel="stylesheet" href="{{ relURL "css/color.css" }}?c={{$cacheHashBase}}">
 
 {{ with $site.Params.CustomCSS }}
-<link rel="stylesheet" href="{{ . | relURL }}?c={{$cacheHashBase}}">
+<link rel="stylesheet" href="{{ relURL . }}?c={{$cacheHashBase}}">
 {{ end }}
 
 {{ with $site.Params.AdobeFontsKitId }}
