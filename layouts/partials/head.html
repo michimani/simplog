@@ -1,7 +1,7 @@
 {{ $lastBuld := now.Unix }}
 {{ $cacheHashBase := (sha1 $lastBuld) }}
 {{ $site := .Site }}
-{{ if not $site.IsServer }}
+{{ if not hugo.IsServer }}
 {{ template "_internal/google_analytics.html" . }}
 {{ end }}
 <meta charset="utf-8">
