@@ -3,7 +3,8 @@ title = "simplog"
 description = ""
 author = "michimani"
 copyright = "Copyright © 2021, Hugo Authors; all rights reserved."
-paginate = 3
+[pagination]
+  pagerSize = 3
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
@@ -49,7 +50,7 @@ theme = "simplog"
   [services.instagram]
     disableInlineCSS = true
 
-  [services.twitter]
+  [services.x]
     disableInlineCSS = true
 
 [params]
