@@ -6,10 +6,11 @@
   "directories": {
     "doc": "docs"
   },
+  "packageManager": "pnpm@10.27.0",
   "scripts": {
-    "css:scss": "node-sass static/scss -o static/css --output-style compressed",
-    "watch:scss": "watch 'npm run css:scss ' ./static/scss",
-    "test": "echo 'npm run test....'"
+    "css:scss": "sass static/scss:static/css --style=compressed --no-source-map",
+    "watch:scss": "sass --watch static/scss:static/css --style=compressed --no-source-map",
+    "test": "echo 'pnpm run test....'"
   },
   "repository": {
     "type": "git",
@@ -22,8 +23,7 @@
   },
   "homepage": "https://github.com/michimani/simplog#readme",
   "devDependencies": {
-    "node-sass": "^8.0.0",
     "npm-check-updates": "^16.7.10",
-    "watch": "^0.13.0"
+    "sass": "^1.0.0"
   }
 }

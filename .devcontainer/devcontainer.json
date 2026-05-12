@@ -1,0 +1,19 @@
+{
+  "name": "simplog",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/hugo:1": {
+      "version": "0.150.1",
+      "extended": true
+    }
+  },
+  "postCreateCommand": "corepack enable && corepack prepare pnpm@10.27.0 --activate && pnpm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "budparr.language-hugo-vscode",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}
