@@ -1,3 +1,5 @@
 public
 node_modules
 package-lock.json
+.pnpm-store
+.claude/settings.local.json
