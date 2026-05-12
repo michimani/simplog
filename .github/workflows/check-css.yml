@@ -2,6 +2,11 @@ name: check css
 
 on:
   pull_request:
+    paths:
+      - "static/scss/**"
+      - "package.json"
+      - "pnpm-lock.yaml"
+      - ".github/workflows/check-css.yml"
 
 jobs:
   check-css:
