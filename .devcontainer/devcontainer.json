@@ -1,0 +1,16 @@
+{
+  "name": "simplog",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
+  "mounts": [
+    "source=${localEnv:HOME}/.gitconfig,target=/home/node/.gitconfig,type=bind,consistency=cached"
+  ],
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "budparr.language-hugo-vscode",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}
