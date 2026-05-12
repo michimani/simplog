@@ -9,3 +9,5 @@ curl -fsSL "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/
 sudo corepack enable
 corepack prepare pnpm@10.27.0 --activate
 pnpm install
+
+curl -fsSL https://claude.ai/install.sh | bash
