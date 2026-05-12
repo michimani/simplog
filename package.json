@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/michimani/simplog#readme",
   "devDependencies": {
-    "npm-check-updates": "^16.7.10",
     "sass": "^1.0.0"
   }
 }
