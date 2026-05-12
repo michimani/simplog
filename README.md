@@ -150,36 +150,37 @@ sequenceDiagram
 ``
 ```
 
-## Developmet
+## Development
 
-Install `nodenv` and install `node 18.x`
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) v24 (see `.node-version`)
+- [pnpm](https://pnpm.io/) v10
+
+### Using devcontainer (Recommended)
+
+A devcontainer configuration is included. Open this repository in [VS Code](https://code.visualstudio.com/) with the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension installed, and the environment will be set up automatically with Node.js 24 and pnpm.
+
+### Manual setup
+
+Install dependencies:
 
 ```bash
-brew install nodenv
-```
-
-```bash
-nodenv install 18.14.2
-```
-
-Install the node module for development such as CSS generation.
-
-```bash
-npm install
+pnpm install
 ```
 
 ### Generate CSS from SCSS
 
-To generate CSS from SCSS, run the following command.
+To generate CSS from SCSS:
 
 ```bash
-npm run css:scss
+pnpm run css:scss
 ```
 
-If you want to monitor SCSS changes, run the following command.
+To watch for SCSS changes and regenerate automatically:
 
 ```bash
-npm run watch:scss
+pnpm run watch:scss
 ```
 
 
