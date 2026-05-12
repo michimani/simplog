@@ -11,3 +11,5 @@ corepack prepare pnpm@10.27.0 --activate
 pnpm install
 
 curl -fsSL https://claude.ai/install.sh | bash
+
+echo 'alias g=git' >> ~/.bashrc
