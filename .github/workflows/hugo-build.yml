@@ -1,0 +1,28 @@
+name: hugo build
+
+on:
+  pull_request:
+    paths:
+      - "layouts/**"
+      - "assets/**"
+      - "static/**"
+      - "archetypes/**"
+      - "theme.toml"
+      - "exampleSite/**"
+      - ".github/workflows/hugo-build.yml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.150.1"
+          extended: true
+
+      - name: Build
+        run: hugo --themesDir ../.. --theme simplog --minify
+        working-directory: ./exampleSite
