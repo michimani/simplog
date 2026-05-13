@@ -41,6 +41,11 @@ theme = "simplog"
     url = "/archives/"
     weight = 40
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [taxonomies]
   category = "categories"
   tag = "tags"
