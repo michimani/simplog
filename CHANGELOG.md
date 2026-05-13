@@ -1,5 +1,17 @@
 # Changelog
 
+## [v1.1.0](https://github.com/michimani/simplog/compare/v1.0.0...v1.1.0) - 2026-05-13
+- chore(deps): update actions/checkout action to v6 by @renovate[bot] in https://github.com/michimani/simplog/pull/89
+- chore(deps): update actions/setup-node action to v6 by @renovate[bot] in https://github.com/michimani/simplog/pull/90
+- chore(deps): update peaceiris/actions-gh-pages action to v4 by @renovate[bot] in https://github.com/michimani/simplog/pull/92
+- chore(deps): update pnpm/action-setup action to v6 by @renovate[bot] in https://github.com/michimani/simplog/pull/95
+- chore(deps): update peaceiris/actions-hugo action to v3 by @renovate[bot] in https://github.com/michimani/simplog/pull/93
+- chore(deps): update pnpm to v10.33.4 by @renovate[bot] in https://github.com/michimani/simplog/pull/96
+- chore(deps): update pnpm to v11 by @renovate[bot] in https://github.com/michimani/simplog/pull/94
+- migrate CSS compilation from Node.js sass to Hugo built-in SCSS processor by @michimani in https://github.com/michimani/simplog/pull/97
+- fix: resolve Hugo build warnings in exampleSite by @michimani in https://github.com/michimani/simplog/pull/98
+- chore: change copyright by @michimani in https://github.com/michimani/simplog/pull/99
+
 ## [v1.0.0](https://github.com/michimani/simplog/commits/v1.0.0) - 2026-05-12
 - Issue/1/improve manu nav by @michimani in https://github.com/michimani/simplog/pull/4
 - hide page title in home index #5 by @michimani in https://github.com/michimani/simplog/pull/6
