@@ -8,8 +8,6 @@
   },
   "packageManager": "pnpm@11.0.6",
   "scripts": {
-    "css:scss": "sass static/scss:static/css --style=compressed --no-source-map",
-    "watch:scss": "sass --watch static/scss:static/css --style=compressed --no-source-map",
     "test": "echo 'pnpm run test....'"
   },
   "repository": {
@@ -21,8 +19,5 @@
   "bugs": {
     "url": "https://github.com/michimani/simplog/issues"
   },
-  "homepage": "https://github.com/michimani/simplog#readme",
-  "devDependencies": {
-    "sass": "^1.0.0"
-  }
+  "homepage": "https://github.com/michimani/simplog#readme"
 }

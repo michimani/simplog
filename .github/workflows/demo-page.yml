@@ -15,6 +15,7 @@ jobs:
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.150.1"
+          extended: true
 
       - name: Pre Build
         run: |

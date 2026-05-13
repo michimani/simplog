@@ -154,33 +154,20 @@ sequenceDiagram
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) v24 (see `.node-version`)
-- [pnpm](https://pnpm.io/) v10
+- [Hugo Extended](https://gohugo.io/installation/) v0.150.1 or later
+
+CSS is generated from SCSS at build time by Hugo Extended's built-in SCSS processor. No Node.js tooling is required for CSS compilation.
 
 ### Using devcontainer (Recommended)
 
-A devcontainer configuration is included. Open this repository in [VS Code](https://code.visualstudio.com/) with the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension installed, and the environment will be set up automatically with Node.js 24 and pnpm.
+A devcontainer configuration is included. Open this repository in [VS Code](https://code.visualstudio.com/) with the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension installed, and Hugo Extended will be set up automatically.
 
 ### Manual setup
 
-Install dependencies:
+Install [Hugo Extended](https://gohugo.io/installation/) and run the development server from the `exampleSite` directory:
 
 ```bash
-pnpm install
-```
-
-### Generate CSS from SCSS
-
-To generate CSS from SCSS:
-
-```bash
-pnpm run css:scss
-```
-
-To watch for SCSS changes and regenerate automatically:
-
-```bash
-pnpm run watch:scss
+hugo server --themesDir ../.. --theme simplog
 ```
 
 
