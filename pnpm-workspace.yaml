@@ -1,3 +1,0 @@
-allowBuilds:
-  # Uses prebuilt platform-specific binaries; no need to compile from source
-  '@parcel/watcher': false

@@ -42,8 +42,10 @@
 <meta property="og:image" content="{{ $site.BaseURL }}/images/featured_image.jpg">
 {{ end }}
 
-<link rel="stylesheet" href="{{ relURL "css/main.css" }}?c={{$cacheHashBase}}">
-<link rel="stylesheet" href="{{ relURL "css/color.css" }}?c={{$cacheHashBase}}">
+{{ $main := resources.Get "scss/main.scss" | css.Sass (dict "outputStyle" "compressed") | fingerprint }}
+{{ $color := resources.Get "scss/color.scss" | css.Sass (dict "outputStyle" "compressed") | fingerprint }}
+<link rel="stylesheet" href="{{ $main.RelPermalink }}">
+<link rel="stylesheet" href="{{ $color.RelPermalink }}">
 
 {{ with $site.Params.CustomCSS }}
 <link rel="stylesheet" href="{{ relURL . }}?c={{$cacheHashBase}}">
