@@ -1,5 +1,10 @@
 # Changelog
 
+## [v1.1.1](https://github.com/michimani/simplog/compare/v1.1.0...v1.1.1) - 2026-05-15
+- chore(deps): update pnpm to v11.0.8 by @renovate[bot] in https://github.com/michimani/simplog/pull/100
+- chore: remove npm packages by @michimani in https://github.com/michimani/simplog/pull/102
+- fix: restore package.json as version file for tagpr by @michimani in https://github.com/michimani/simplog/pull/103
+
 ## [v1.1.0](https://github.com/michimani/simplog/compare/v1.0.0...v1.1.0) - 2026-05-13
 - chore(deps): update actions/checkout action to v6 by @renovate[bot] in https://github.com/michimani/simplog/pull/89
 - chore(deps): update actions/setup-node action to v6 by @renovate[bot] in https://github.com/michimani/simplog/pull/90
