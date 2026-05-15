@@ -6,7 +6,7 @@
   "directories": {
     "doc": "docs"
   },
-  "packageManager": "pnpm@11.0.6",
+  "packageManager": "pnpm@11.0.8",
   "scripts": {
     "test": "echo 'pnpm run test....'"
   },
