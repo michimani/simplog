@@ -1,5 +1,11 @@
 # Changelog
 
+## [v1.1.2](https://github.com/michimani/simplog/compare/v1.1.1...v1.1.2) - 2026-06-05
+
+- chore(deps): update node.js to v24.16.0 by @renovate[bot] in https://github.com/michimani/simplog/pull/104
+- chore(deps): update songmu/tagpr digest to e84001b by @renovate[bot] in https://github.com/michimani/simplog/pull/106
+- chore(deps): update actions/checkout digest to df4cb1c by @renovate[bot] in https://github.com/michimani/simplog/pull/107
+
 ## [v1.1.1](https://github.com/michimani/simplog/compare/v1.1.0...v1.1.1) - 2026-05-15
 - chore(deps): update pnpm to v11.0.8 by @renovate[bot] in https://github.com/michimani/simplog/pull/100
 - chore: remove npm packages by @michimani in https://github.com/michimani/simplog/pull/102
