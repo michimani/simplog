@@ -1,5 +1,11 @@
 # Changelog
 
+## [v1.1.3](https://github.com/michimani/simplog/compare/v1.1.2...v1.1.3) - 2026-06-30
+
+- chore(deps): update node.js to v24.17.0 by @renovate[bot] in https://github.com/michimani/simplog/pull/108
+- chore(deps): update actions/checkout action to v7 by @renovate[bot] in https://github.com/michimani/simplog/pull/110
+- chore(deps): update node.js to v24.18.0 by @renovate[bot] in https://github.com/michimani/simplog/pull/111
+
 ## [v1.1.2](https://github.com/michimani/simplog/compare/v1.1.1...v1.1.2) - 2026-06-05
 
 - chore(deps): update node.js to v24.16.0 by @renovate[bot] in https://github.com/michimani/simplog/pull/104
