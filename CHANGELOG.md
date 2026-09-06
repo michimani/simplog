@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.1.5](https://github.com/michimani/simplog/compare/v1.1.4...v1.1.5) - 2026-09-06
+
+- chore(deps): update node.js to v24.20.0 by @renovate[bot] in https://github.com/michimani/simplog/pull/117
+
 ## [v1.1.4](https://github.com/michimani/simplog/compare/v1.1.3...v1.1.4) - 2026-08-10
 
 - chore(deps): update node.js to v24.18.1 by @renovate[bot] in https://github.com/michimani/simplog/pull/114
