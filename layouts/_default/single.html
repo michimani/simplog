@@ -13,7 +13,7 @@
 <!--Date-->
 
 <!--TOC-->
-{{ if eq .Site.Params.Enabled.Toc true }}
+{{ if and (eq .Site.Params.Enabled.Toc true) (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") }}
 {{.TableOfContents}}
 {{ end }}
 
