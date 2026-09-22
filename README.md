@@ -150,6 +150,18 @@ sequenceDiagram
 ``
 ```
 
+### Last Modified Date
+
+You can enable the `lastmod` front matter to show up as “(last updated \<date\>)” on posts. To do so you have to enable it in the config first:
+
+```toml
+[params.enabled]
+  lastmod = true
+```
+
+> [!NOTE]
+> If you have set `enableGitInfo = true`, every post will have a `lastmod` date derived from its last commit date by default.
+
 ## Development
 
 ### Prerequisites

@@ -7,7 +7,10 @@
 <!--Title-->
 <h2>{{.Title}}</h2>
 {{ if or (not .Params.hideDate) (eq .Params.hideDate false) }}
-<span class="sub">{{.Date.Format "2006-01-02"}}</span>
+<span class="sub date">{{.Date.Format "2006-01-02"}}</span>
+  {{ if and site.Params.enabled.lastmod .Lastmod (ne (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02")) }}
+<span class="sub lastmod">(last updated {{.Lastmod.Format "2006-01-02"}})</span>
+  {{ end }}
 {{ end }}
 
 <!--Date-->
