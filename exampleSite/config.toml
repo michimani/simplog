@@ -70,5 +70,6 @@ theme = "simplog"
 
   [params.enabled]
     comment = true
+    lastmod = true
     summary = true
     toc = true
