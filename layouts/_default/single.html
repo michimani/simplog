@@ -41,7 +41,11 @@
 
 <!-- disqus -->
 {{ if and (eq .Params.comments true) (eq .Site.Params.Enabled.Comment true) }}
-	{{ template "_internal/disqus.html" . }}
+  {{ if templates.Exists "partials/comments.html" }}
+    {{ partial "comments.html" . }}
+  {{ else }}
+    {{ template "_internal/disqus.html" . }}
+  {{ end }}
 {{ end }}
 
 {{ if or (not .Params.hideNeighbor) (eq .Params.hideNeighbor false) }}
