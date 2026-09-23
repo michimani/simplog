@@ -1,5 +1,5 @@
 {{ $lastBuld := now.Unix }}
-{{ $cahceHashBase := (sha1 $lastBuld) }}
+{{ $cacheHashBase := (sha1 $lastBuld) }}
 {{ $site := .Site }}
 <div id="content-header" class="title">
   <!--Site Title-->
@@ -9,7 +9,7 @@
 
   {{ with $site.Params.headerImagePath }}
   <div id="header-image-area">
-    <img class="header-image" src="{{ . | relURL }}?c={{$cahceHashBase}}">
+    <img class="header-image" src="{{ . | relURL }}?c={{$cacheHashBase}}">
   </div>
   {{ end }}
 
