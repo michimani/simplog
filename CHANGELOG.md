@@ -1,5 +1,15 @@
 # Changelog
 
+## [v1.2.0](https://github.com/michimani/simplog/compare/v1.1.4...v1.2.0) - 2026-09-23
+
+- chore(deps): update node.js to v24.20.0 by @renovate[bot] in https://github.com/michimani/simplog/pull/117
+- chore(deps): update node.js to v24.21.0 by @renovate[bot] in https://github.com/michimani/simplog/pull/119
+- chore(deps): update dependency hugo to v0.166.0 by @renovate[bot] in https://github.com/michimani/simplog/pull/120
+- Fix toc insertion with empty toc by @alterNERDtive in https://github.com/michimani/simplog/pull/122
+- Fix some typos by @alterNERDtive in https://github.com/michimani/simplog/pull/123
+- Support custom comments partial by @alterNERDtive in https://github.com/michimani/simplog/pull/124
+- Feature: add `lastmod` date to posts by @alterNERDtive in https://github.com/michimani/simplog/pull/121
+
 ## [v1.1.4](https://github.com/michimani/simplog/compare/v1.1.3...v1.1.4) - 2026-08-10
 
 - chore(deps): update node.js to v24.18.1 by @renovate[bot] in https://github.com/michimani/simplog/pull/114
