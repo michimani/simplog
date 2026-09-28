@@ -65,6 +65,7 @@ theme = "simplog"
   description = "This is a simple blog theme for Hugo."
   twitter = "GoHugoIO"
   customCSS = ""
+  customSCSS = ""
   adobeFontsKitId = ""
   headerImagePath = "images/header-image.jpg"
 
