@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.2.1](https://github.com/michimani/simplog/compare/v1.2.0...v1.2.1) - 2026-10-10
+
+- chore(deps): update dependency hugo to v0.167.0 by @renovate[bot] in https://github.com/michimani/simplog/pull/126
+
 ## [v1.2.0](https://github.com/michimani/simplog/compare/v1.1.4...v1.2.0) - 2026-09-23
 
 - chore(deps): update node.js to v24.20.0 by @renovate[bot] in https://github.com/michimani/simplog/pull/117
