@@ -50,6 +50,16 @@
 {{ with $site.Params.CustomCSS }}
 <link rel="stylesheet" href="{{ relURL . }}?c={{$cacheHashBase}}">
 {{ end }}
+{{ with $site.Params.CustomSCSS }}
+  {{ if hugo.IsServer }}
+    {{ $cssOpts := (dict "enableSourceMap" true ) }}
+    {{ $styles := resources.Get . | css.Sass $cssOpts }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+  {{ else }}
+    {{ $styles := resources.Get . | css.Sass | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
+  {{ end }}
+{{ end }}
 
 {{ with $site.Params.AdobeFontsKitId }}
 <!-- Adobe Fonts -->
