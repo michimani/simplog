@@ -36,11 +36,7 @@
 <meta name="twitter:title" content="{{ if .IsHome }}{{ $site.Title }}{{ else }}{{ .Title }} - {{ $site.Title }}{{ end }}"></meta>
 <meta name="twitter:url" content="{{ .Permalink }}"></meta>
 <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ $site.Params.description }}{{ end }}"></meta>
-{{ with .Params.ogimage }}
-<meta property="og:image" content="{{ $site.BaseURL }}{{ . }}">
-{{ else }}
-<meta property="og:image" content="{{ $site.BaseURL }}/images/featured_image.jpg">
-{{ end }}
+<meta name="twitter:image" content="{{ with .Params.ogimage }}{{ $site.BaseURL }}{{ . }}{{ else }}{{ $site.BaseURL }}/images/featured_image.jpg{{ end }}">
 
 {{ $main := resources.Get "scss/main.scss" | css.Sass (dict "outputStyle" "compressed") | fingerprint }}
 {{ $color := resources.Get "scss/color.scss" | css.Sass (dict "outputStyle" "compressed") | fingerprint }}
