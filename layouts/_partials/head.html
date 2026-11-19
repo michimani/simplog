@@ -2,7 +2,7 @@
 {{ $cacheHashBase := (sha1 $lastBuld) }}
 {{ $site := .Site }}
 {{ if not hugo.IsServer }}
-{{ template "_internal/google_analytics.html" . }}
+{{ partial "google_analytics.html" . }}
 {{ end }}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -64,7 +64,7 @@
   })(document);
 </script>
 
-{{ if templates.Exists "partials/additional-custom-head.html" }}
+{{ if templates.Exists "_partials/additional-custom-head.html" }}
   {{ partial "additional-custom-head.html" $site }}
 {{ end }}
 
