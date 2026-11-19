@@ -78,11 +78,18 @@ The comment form will be enabled when both of them are `true`.
 
 ### Custom CSS
 
-If you want to use your own CSS, set value that is path to your CSS file at `config.toml`
+If you want to use your own CSS, set value that is path to your CSS file at `config.toml`. The path is relative to `static/`.
 
 ```toml
 [params]
   customCSS = ""
+```
+
+Alternatively, you can provide a custom SCSS file. The path is relative to `assets/`.
+
+```toml
+[params]
+  customSCSS = ""
 ```
 
 ### Adobe Fonts
